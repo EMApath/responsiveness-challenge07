@@ -25,12 +25,16 @@ body{
 .hero{
     min-height: 660px;
     background-color: #F3EED9;
-    text-align: center;
+    
 }
 .hero-text{
-    width: 70%;
-    margin: 0 auto;
-    padding: 6em;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
 }
 .hero p{
     color: #222c2a;
@@ -41,6 +45,7 @@ body{
     color: #824936;
     font-size: 4rem;
     font-weight: 600;
+    margin-top: 0;
 }
 .container{
     width: 80%;
@@ -87,8 +92,8 @@ body{
 .col-bottom{
     background-color: #824936;
 }
-/* @media screen and (max-width:786px) {
-   *{
-        font-size: 14px;
-    }
-} */
+@media screen and (max-width:786px) {
+   .row{
+    display: block;
+   }
+}
